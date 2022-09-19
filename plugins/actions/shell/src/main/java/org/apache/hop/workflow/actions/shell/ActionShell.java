@@ -49,6 +49,7 @@ import org.w3c.dom.Node;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -621,7 +622,7 @@ public class ActionShell extends ActionBase implements Cloneable, IAction {
         }
         tempFile.createFile();
         OutputStream outputStream = tempFile.getContent().getOutputStream();
-        outputStream.write(fileContent.getBytes());
+        outputStream.write(fileContent.getBytes(Charset.defaultCharset()));
         outputStream.close();
         if (!isWindows) {
           String tempFilename = HopVfs.getFilename(tempFile);
