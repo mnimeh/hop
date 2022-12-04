@@ -36,60 +36,7 @@
     <url>https://hop.apache.org</url>
     <inceptionYear>2020</inceptionYear>
 
-    <developers>
-        <developer>
-            <name>The Apache Hop Team</name>
-            <email>dev@hop.apache.org</email>
-            <url>https://hop.apache.org</url>
-            <organization>Apache Software Foundation</organization>
-            <organizationUrl>http://apache.org/</organizationUrl>
-        </developer>
-    </developers>
 
-    <mailingLists>
-        <mailingList>
-            <name>Development List</name>
-            <subscribe>dev-subscribe@hop.apache.org</subscribe>
-            <unsubscribe>dev-unsubscribe@hop.apache.org</unsubscribe>
-            <post>dev@hop.apache.org</post>
-        </mailingList>
-        <mailingList>
-            <name>User List</name>
-            <subscribe>users-subscribe@hop.apache.org</subscribe>
-            <unsubscribe>users-unsubscribe@hop.apache.org</unsubscribe>
-            <post>users@hop.apache.org</post>
-        </mailingList>
-        <mailingList>
-            <name>Commits List</name>
-            <subscribe>commits-subscribe@hop.apache.org</subscribe>
-            <unsubscribe>commits-unsubscribe@hop.apache.org</unsubscribe>
-            <post>commits@hop.apache.org</post>
-        </mailingList>
-    </mailingLists>
-
-    <issueManagement>
-        <system>JIRA</system>
-        <url>https://issues.apache.org/jira/browse/HOP</url>
-    </issueManagement>
-    <ciManagement>
-        <system>Jenkins</system>
-        <url>https://builds.apache.org/job/Hop/</url>
-    </ciManagement>
-
-    <distributionManagement>
-        <site>
-            <id>apache.website</id>
-            <url>${site-repo-url}</url>
-        </site>
-    </distributionManagement>
-
-
-    <scm>
-        <connection>scm:git:http://gitbox.apache.org/repos/asf/hop.git</connection>
-        <developerConnection>scm:git:http://gitbox.apache.org/repos/asf/hop.git</developerConnection>
-        <url>https://gitbox.apache.org/repos/asf?p=hop.git;a=summary</url>
-        <tag>HEAD</tag>
-    </scm>
 
     <licenses>
         <license>
@@ -1053,32 +1000,4 @@
             </plugin>
         </plugins>
     </reporting>
-
-
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo1.maven.org/maven2/</url>
-            <name>Maven Central</name>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>apache.snapshots</id>
-            <url>https://repository.apache.org/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
-
 </project>

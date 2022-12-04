@@ -68,7 +68,7 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
+    <!--
     <repositories>
         <repository>
             <id>clojars</id>
@@ -83,4 +83,5 @@
         </repository>
     </repositories>
 
+   -->
 </project>
